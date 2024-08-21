@@ -1,20 +1,16 @@
-import imgMain from "../../Assets/image.png"
+import imgMain from '../../Assets/image.png'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { MdKey } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
-import Header from "../../Components/Header/Header";
-import './loginPage.scss'
+import Header from '../../Components/Header/Header';
 
-const LoginPage = () => {
+const LogupPage = () => {
     const navigate = useNavigate()
 
-    const handleLogup = () => {
-        navigate('/logup')
-    }
-    const handleForgot = () => {
-        navigate('/forgotpassword')
+    const handleLogin = () => {
+        navigate('/login')
     }
     return (
         <div>
@@ -35,18 +31,18 @@ const LoginPage = () => {
                                 <Form.Control type="password" placeholder="Password" />
                             </div>
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="remember me" />
+                        <Form.Group className="mb-3 form-password" controlId="formBasicPassword">
+                            <div className="input-icon">
+                                <MdKey className="icon" />
+                                <Form.Control type="password" placeholder="Confirm Password" />
+                            </div>
                         </Form.Group>
                         <Button className='btn-sub' variant="primary" type="submit">
-                            Sign in
+                            Sign Up
                         </Button>
                         <div>
-                            <Form.Text className="text-muted" onClick={() => handleForgot()}>
-                                Forgot password?
-                            </Form.Text>
-                            <Form.Text className="sign-up" onClick={() => handleLogup()}>
-                                Sign up
+                            <Form.Text className="sign-in" onClick={() => handleLogin()}>
+                                Sign in
                             </Form.Text>
                         </div>
                     </Form>
@@ -55,4 +51,4 @@ const LoginPage = () => {
         </div>
     )
 }
-export default LoginPage
+export default LogupPage

@@ -1,9 +1,90 @@
-.login-container {
-    position: relative;
-    img {
-        position: absolute; /* Định vị hình ảnh so với container */
-        margin-top: 100px;
+// .login-container {
+//     position: relative;
+//     img {
+//         position: absolute; /* Định vị hình ảnh so với container */
+//         margin-top: 100px;
+//         width: 100vw;
+//         height: 100vh;
+//     }
+// }
+.login-container{
+  
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100vw;
         height: 100vh;
+        object-fit: cover;
+        display: block;
+        z-index: -10;
+    }
+    .form-login-container{
+      color: white;
+      margin-top: 150px;
+      margin-left: 190px;
+      width: 300px;
+      .form-login{
+        .form-control::placeholder {
+          color: #a9a9a9; 
+        } 
+        .input-icon {
+          position: relative;
+        }
+        .input-icon .icon {
+          position: absolute;
+          left: 10px; 
+          top: 50%;
+          transform: translateY(-50%);
+          color: #ccc;
+          font-size: 20px;
+        }
+
+        .input-icon .form-control {
+          padding-left: 35px;
+          
+        }
+
+        .form-control{
+          border-radius: 0;
+          background: #000000e5;
+          height: 50px;
+          border: solid #000000e5;
+          color: white;
+        }
+        .form-check-input{
+          border-radius: 0;
+          background-color: #000000e5;
+        }
+         .form-check-input:checked {
+            background-color: #000000e5;
+            border-color: white; 
+        }
+        .btn-sub{
+          width: 300px;
+        }
+        .text-muted{
+          color: white !important;
+          cursor: pointer;
+          
+        }
+        .sign-up{
+          color: white;
+          margin-left: 135px;
+          cursor: pointer;
+        }
+        .sign-in{
+          color: white;
+          margin-left: 255px;
+          cursor: pointer;
+        }
+        button{
+          background-color: rgba(35,22,77,255);
+          opacity: 0.5;
+          border: 0 solid;
+          border-radius: 0;
+          margin-bottom: 5px;
+        }
+      }
     }
 }

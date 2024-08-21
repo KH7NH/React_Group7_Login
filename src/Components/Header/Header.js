@@ -3,10 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import { useState } from 'react';
-import avt from '../Assets/trend-avatar-11.jpg'
+import avt from '../../Assets/trend-avatar-11.jpg'
 import ListGroup from 'react-bootstrap/ListGroup';
-
-
+import './Scss/Style.scss'
 
 const Header = () => {
     const [isShow, setShow] = useState(false)

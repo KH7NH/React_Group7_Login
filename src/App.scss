@@ -1,44 +1,8 @@
-.navbar-container {
-    margin-top: 10px;
-  .navbar-title {
-    color: white;
-    margin-right: 50px;
-    &:hover{
-        color: white;
-    }
-  }
-  .navbar-collapse {
-    position: relative;
-    .navbar-actions {
-      .nav-link {
-        color: white;
-        font-size: 13px;
-        margin-right: 8px;
-      }
-    }
-  }
-  .avt-user{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
-  .list-user{
-    border: 1px solid #000000e5;
-    position: absolute;
-    margin-top: 5px;
-    .list-group-item{
-      background-color: #000000e5;
-      color: white;
-      width: 100px;
-      border-radius: 0;
-      
-    }
-  }
 
-}
 
-.login-container{
-    img{
+
+.forgot-container{
+  img{
         position: absolute;
         top: 0;
         left: 0;
@@ -48,67 +12,38 @@
         display: block;
         z-index: -10;
     }
-    .form-login-container{
-      color: white;
-      margin-top: 150px;
-      margin-left: 190px;
-      width: 300px;
-      .form-login{
-        .form-control::placeholder {
-          color: #a9a9a9; 
-        } 
-        .input-icon {
-          position: relative;
+    .form-forgot-container{
+      padding-left: 140px;
+      .form-forgot{
+        display: flex;
+        padding-top: 150px;
+        .form-password{
+          width: 110px;
+          height: 110px;
+          margin-right: 10px;
+          text-align: center;
         }
-        .input-icon .icon {
-          position: absolute;
-          left: 10px; 
-          top: 50%;
-          transform: translateY(-50%);
-          color: #ccc;
-          font-size: 20px;
-        }
-
-        .input-icon .form-control {
-          padding-left: 35px;
-          
-        }
-
-        .form-control{
-          border-radius: 0;
-          background: #000000e5;
-          height: 50px;
-          border: solid #000000e5;
+        input.form-control {
+          text-align: center;
+          width: 90px;
+          height: 90px;
+          background-color: #000;
           color: white;
+          font-size: 70px;
         }
-        .form-check-input{
-          border-radius: 0;
-          background-color: #000000e5;
-        }
-         .form-check-input:checked {
-            background-color: #000000e5;
-            border-color: white; 
-        }
-        .btn-sub{
-          width: 300px;
-        }
-        .text-muted{
-          color: white !important;
-          cursor: pointer;
-          
-        }
-        .sign-up{
-          color: white;
-          margin-left: 135px;
-          cursor: pointer;
-        }
-        button{
+      }
+      .countdown{
+        color: white;
+      }
+      button{
           background-color: rgba(35,22,77,255);
           opacity: 0.5;
           border: 0 solid;
-          border-radius: 0;
+          border-radius: 5px;
           margin-bottom: 5px;
+          width: 450px;
+          font-size: 17px;
+          height: 60px;
         }
-      }
     }
 }

@@ -1,0 +1,38 @@
+.navbar-container {
+    margin-top: 10px;
+  .navbar-title {
+    color: white;
+    margin-right: 50px;
+    &:hover{
+        color: white;
+    }
+  }
+  .navbar-collapse {
+    position: relative;
+    .navbar-actions {
+      .nav-link {
+        color: white;
+        font-size: 13px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .avt-user{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .list-user{
+    border: 1px solid #000000e5;
+    position: absolute;
+    margin-top: 5px;
+    .list-group-item{
+      background-color: #000000e5;
+      color: white;
+      width: 100px;
+      border-radius: 0;
+      
+    }
+  }
+
+}
